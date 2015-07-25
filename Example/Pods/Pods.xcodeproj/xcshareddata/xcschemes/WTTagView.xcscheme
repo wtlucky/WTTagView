@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D8295ADE8B46ED7C7357D737"
+               BlueprintIdentifier = "32AD8E3AC7B3837F24FF4132"
                BuildableName = "WTTagView.framework"
                BlueprintName = "WTTagView"
                ReferencedContainer = "container:Pods.xcodeproj">

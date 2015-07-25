@@ -1,6 +1,6 @@
 PODS:
   - Masonry (0.6.2)
-  - WTTagView (0.1.0):
+  - WTTagView (1.0):
     - Masonry (~> 0.6.2)
 
 DEPENDENCIES:
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 362e8a1cc0beada4a4c4832d5e863da2a51533be
-  WTTagView: ba54a48740ce1a83aaf876f2b94c8a872aad1a23
+  WTTagView: c2e848b4d368fd2781a0695dd77f78b0e973c3e9
 
 COCOAPODS: 0.38.1
