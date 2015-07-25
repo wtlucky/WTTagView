@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "WTTagView"
-  s.version          = "0.1.0"
+  s.version          = "1.0"
   s.summary          = "A TagView used to add tags to an image. You can change tag directions, move tag position and delete tags. You can also custom tag styles."
   s.description      = <<-DESC
                         A TagView used to add tags to an image. You can change tag directions, move tag position and delete tags. You can also custom tag styles.
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.screenshots      = "http://imgchr.com/images/tagViewEdit.gif", "http://imgchr.com/images/tagViewPreview.gif"
   s.license          = 'MIT'
   s.author           = { "wtlucky" => "wtlucky@foxmail.com" }
-  s.source           = { :git => "https://github.com/wtlucky/WTTagView.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/wtlucky/WTTagView.git", :tag => "1.0" }
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
