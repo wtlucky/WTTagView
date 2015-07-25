@@ -1,0 +1,6 @@
+framework module WTTagView {
+  umbrella header "WTTagView-umbrella.h"
+
+  export *
+  module * { export * }
+}

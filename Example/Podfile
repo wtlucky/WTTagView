@@ -7,6 +7,5 @@ end
 
 target 'WTTagView_Tests', :exclusive => true do
   pod "WTTagView", :path => "../"
-
   
 end

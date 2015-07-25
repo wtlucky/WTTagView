@@ -13,13 +13,15 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* WTAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* WTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* WTViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		609BDBD61B636C5E006C600D /* WTEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609BDBD51B636C5E006C600D /* WTEditViewController.m */; };
+		609BDBD91B636C95006C600D /* WTPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609BDBD81B636C95006C600D /* WTPreviewViewController.m */; };
+		609BDBDC1B636CA7006C600D /* WTInputTitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 609BDBDB1B636CA7006C600D /* WTInputTitleViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B2BB60BBC4B4D771D59877D1 /* Pods_WTTagView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36AED5AB8ABAD3A418A82D68 /* Pods_WTTagView_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DDA369D59BC5B7B008AE08B1 /* Pods_WTTagView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31464DDBF67EB11AFEF1049 /* Pods_WTTagView_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -40,7 +42,7 @@
 		3498F7DB74A72AB4A3921CE7 /* Pods-WTTagView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTTagView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTTagView_Example/Pods-WTTagView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		36AED5AB8ABAD3A418A82D68 /* Pods_WTTagView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTTagView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B04EC4E66EF2E118B504D11 /* Pods-WTTagView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTTagView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTTagView_Tests/Pods-WTTagView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* WTTagView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = WTTagView.app; path = WTTagView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* WTTagView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTTagView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -50,15 +52,19 @@
 		6003F59B195388D20070C39A /* WTTagView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WTTagView-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* WTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* WTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* WTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* WTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = WTTagView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* WTTagView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WTTagView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		609BDBD41B636C5E006C600D /* WTEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTEditViewController.h; sourceTree = "<group>"; };
+		609BDBD51B636C5E006C600D /* WTEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTEditViewController.m; sourceTree = "<group>"; };
+		609BDBD71B636C95006C600D /* WTPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPreviewViewController.h; sourceTree = "<group>"; };
+		609BDBD81B636C95006C600D /* WTPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTPreviewViewController.m; sourceTree = "<group>"; };
+		609BDBDA1B636CA7006C600D /* WTInputTitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTInputTitleViewController.h; sourceTree = "<group>"; };
+		609BDBDB1B636CA7006C600D /* WTInputTitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTInputTitleViewController.m; sourceTree = "<group>"; };
 		7CD8512C1041B0D819D9DF12 /* Pods-WTTagView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTTagView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTTagView_Tests/Pods-WTTagView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A31464DDBF67EB11AFEF1049 /* Pods_WTTagView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTTagView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,8 +125,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* WTTagView.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* WTTagView_Example.app */,
+				6003F5AE195388D20070C39A /* WTTagView_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,8 +150,12 @@
 				6003F59C195388D20070C39A /* WTAppDelegate.h */,
 				6003F59D195388D20070C39A /* WTAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* WTViewController.h */,
-				6003F5A6195388D20070C39A /* WTViewController.m */,
+				609BDBD41B636C5E006C600D /* WTEditViewController.h */,
+				609BDBD51B636C5E006C600D /* WTEditViewController.m */,
+				609BDBD71B636C95006C600D /* WTPreviewViewController.h */,
+				609BDBD81B636C95006C600D /* WTPreviewViewController.m */,
+				609BDBDA1B636CA7006C600D /* WTInputTitleViewController.h */,
+				609BDBDB1B636CA7006C600D /* WTInputTitleViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -213,7 +223,7 @@
 			);
 			name = WTTagView_Example;
 			productName = WTTagView;
-			productReference = 6003F58A195388D20070C39A /* WTTagView.app */;
+			productReference = 6003F58A195388D20070C39A /* WTTagView_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* WTTagView_Tests */ = {
@@ -234,7 +244,7 @@
 			);
 			name = WTTagView_Tests;
 			productName = WTTagViewTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* WTTagView_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -390,8 +400,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				609BDBD91B636C95006C600D /* WTPreviewViewController.m in Sources */,
+				609BDBDC1B636CA7006C600D /* WTInputTitleViewController.m in Sources */,
+				609BDBD61B636C5E006C600D /* WTEditViewController.m in Sources */,
 				6003F59E195388D20070C39A /* WTAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* WTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
