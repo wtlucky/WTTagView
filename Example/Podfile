@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'WTTagView_Example', :exclusive => true do
+  pod "WTTagView", :path => "../"
+end
+
+target 'WTTagView_Tests', :exclusive => true do
+  pod "WTTagView", :path => "../"
+
+  
+end
